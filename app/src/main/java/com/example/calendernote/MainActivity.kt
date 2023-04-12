@@ -94,10 +94,6 @@ class MainActivity : AppCompatActivity() {
         if (!EventBus.getDefault().isRegistered(this)){
             EventBus.getDefault().register(this)
         }
-
-
-
-
         addBtn.setOnClickListener {
             EventBus.getDefault().post(ActionEvent(Constant.InsertNote))
         }
